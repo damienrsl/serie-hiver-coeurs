@@ -63,8 +63,8 @@ section{margin:26px 0}
 .barre{display:grid;grid-template-columns:44px 1fr 52px;gap:8px;align-items:center;font-size:12.5px;margin:3px 0;color:var(--texte-2)}
 .barre i{display:block;height:12px;border-radius:6px;background:linear-gradient(90deg,var(--pan-3),var(--pan))}
 .barre .val{text-align:right;font-family:var(--police-mono);color:var(--texte)}
-.outils{position:sticky;top:0;z-index:5;padding:10px 0;display:flex;gap:6px;flex-wrap:wrap}
-.pil{border:0;border-radius:999px;padding:9px 14px;font:600 14px var(--police);background:rgba(255,255,255,.85);color:var(--texte);box-shadow:0 0 0 1px var(--filet);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.outils{position:sticky;top:0;z-index:5;padding:10px 16px;margin:0 -16px;display:flex;gap:6px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}.outils::-webkit-scrollbar{display:none}
+.pil{flex:0 0 auto;white-space:nowrap;border:0;border-radius:999px;padding:8px 12px;font:600 13.5px var(--police);background:rgba(255,255,255,.85);color:var(--texte);box-shadow:0 0 0 1px var(--filet);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
 .pil.on{background:linear-gradient(135deg,var(--pan),var(--pan-3));color:#fff;box-shadow:0 6px 16px -8px rgba(40,95,255,.8)}
 .ep{padding:16px 0 12px;margin:14px 0;overflow:hidden}
 .ep-tete{display:flex;align-items:baseline;gap:10px;padding:0 16px}
@@ -136,7 +136,7 @@ details p{font-size:12.5px;margin:5px 0}
 <button class="pil on" data-f="tous">Tous</button>
 <button class="pil" data-f="coeur">Mes coups de cœur</button>
 <button class="pil" data-f="jamais">Jamais postés</button>
-<button class="pil" data-t="vues">Trier : plus vus</button>
+<button class="pil" data-t="vues">Plus vus</button>
 </div>
 <div id="liste"></div>
 </section>
